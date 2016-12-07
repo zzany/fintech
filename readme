@@ -1,0 +1,10 @@
+This is used to simulate clearing just cycles of length two (direct consumer
+to consumer) versus the housing solution, clearing the longest cycle first
+every time. In order to simulate, comment out the correct half of the code
+(either comment out the second half and leave the first half if you want to 
+run the longest cycle approach, otherwise comment out the first half and leave
+the second half).
+
+Can change number of edges on line 50 (i < ###). TiernanSimpleCycles takes to 
+long to run on sets of edges much larger than a few hundred, but YRMV.
+
