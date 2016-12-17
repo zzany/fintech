@@ -1,4 +1,6 @@
-This is used to simulate clearing just cycles of length two (direct consumer
+There are two models presents (and two Main methods). 
+
+The first is used to simulate clearing just cycles of length two (direct consumer
 to consumer) versus the housing solution, clearing the longest cycle first
 every time. In order to simulate, comment out the correct half of the code
 (either comment out the second half and leave the first half if you want to 
@@ -8,3 +10,5 @@ the second half).
 Can change number of edges on line 50 (i < ###). TiernanSimpleCycles takes to 
 long to run on sets of edges much larger than a few hundred, but YRMV.
 
+
+The second is a model in which we maintain a balance sheet of cash and balances of each of 20 gift cards. Each time a user enters the market, we check if we can clear their trade with gift card balance first, then with our cash balance. If not, we add them to the queue (technically a map to increase search efficiency). We then iterate through this queue to see if any more trades can be cleared after each additional cleared trade.
